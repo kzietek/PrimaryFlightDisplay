@@ -10,7 +10,7 @@ import SpriteKit
 
 public class PrimaryFlightDisplayView: SKView {
     
-    init(frame: NSRect, settings: SettingsType = DefaultSettings()) {
+    init(frame: CGRect, settings: SettingsType = DefaultSettings()) {
         super.init(frame: frame)
         commonInit(settings: settings)
     }

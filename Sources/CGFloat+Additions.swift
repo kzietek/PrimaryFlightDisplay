@@ -6,7 +6,7 @@
 //  Copyright © 2016 Michael Koukoullis. All rights reserved.
 //
 
-import Foundation
+import SpriteKit
 
 extension CGFloat {
     

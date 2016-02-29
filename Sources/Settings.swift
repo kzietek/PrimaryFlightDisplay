@@ -153,7 +153,7 @@ public protocol TapeIndicatorStyleType {
 public struct DefaultAltimeterStyle: TapeIndicatorStyleType {
     public var size = CGSize(width: 60, height: 300)
     public var type = TapeType.Continuous
-    public var backgroundColor = SKColor(calibratedRed: 0, green: 0, blue: 0, alpha: 0.5)
+    public var backgroundColor = SKColor(red: 0, green: 0, blue: 0, alpha: 0.5)
     public var pointerBackgroundColor = SKColor.blackColor()
     public var font: FontType = DefaultFont()
 
@@ -171,7 +171,7 @@ public struct DefaultAltimeterStyle: TapeIndicatorStyleType {
 public struct DefaultAirspeedIndicatorStyle: TapeIndicatorStyleType {
     public var size = CGSize(width: 60, height: 300)
     public var type = TapeType.Continuous
-    public var backgroundColor = SKColor(calibratedRed: 0, green: 0, blue: 0, alpha: 0.5)
+    public var backgroundColor = SKColor(red: 0, green: 0, blue: 0, alpha: 0.5)
     public var pointerBackgroundColor = SKColor.blackColor()
     public var font: FontType = DefaultFont()
     
@@ -189,7 +189,7 @@ public struct DefaultAirspeedIndicatorStyle: TapeIndicatorStyleType {
 public struct DefaultHeadingIndicatorStyle: TapeIndicatorStyleType {
     public var size = CGSize(width: 400, height: 60)
     public var type = TapeType.Compass
-    public var backgroundColor = SKColor(calibratedRed: 0, green: 0, blue: 0, alpha: 0.5)
+    public var backgroundColor = SKColor(red: 0, green: 0, blue: 0, alpha: 0.5)
     public var pointerBackgroundColor = SKColor.blackColor()
     public var font: FontType = DefaultFont()
     
