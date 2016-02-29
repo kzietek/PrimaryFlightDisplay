@@ -37,7 +37,7 @@ extension AttitudeType {
     }
 }
 
-struct Attitude: AttitudeType {
-    let pitchRadians: Float
-    let rollRadians: Float
+public struct Attitude: AttitudeType {
+    public let pitchRadians: Float
+    public let rollRadians: Float
 }
