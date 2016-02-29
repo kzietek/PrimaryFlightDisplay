@@ -13,6 +13,40 @@
 		27B17FEB1C8445DD006EEC9D /* iOS-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 27B17FEA1C8445DD006EEC9D /* iOS-Framework.xcconfig */; };
 		27B17FED1C8445F6006EEC9D /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 27B17FEC1C8445F6006EEC9D /* Debug.xcconfig */; };
 		27B17FEF1C844609006EEC9D /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 27B17FEE1C844609006EEC9D /* Release.xcconfig */; };
+		27B180031C844973006EEC9D /* Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FF01C844972006EEC9D /* Additions.swift */; };
+		27B180041C844973006EEC9D /* Attitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FF11C844972006EEC9D /* Attitude.swift */; };
+		27B180051C844973006EEC9D /* AttitudeReferenceIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FF21C844972006EEC9D /* AttitudeReferenceIndex.swift */; };
+		27B180061C844973006EEC9D /* BankIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FF31C844972006EEC9D /* BankIndicator.swift */; };
+		27B180071C844973006EEC9D /* CGFloat+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FF41C844972006EEC9D /* CGFloat+Additions.swift */; };
+		27B180081C844973006EEC9D /* CGSize+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FF51C844972006EEC9D /* CGSize+Additions.swift */; };
+		27B180091C844973006EEC9D /* Horizon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FF61C844972006EEC9D /* Horizon.swift */; };
+		27B1800A1C844973006EEC9D /* Int+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FF71C844972006EEC9D /* Int+Additions.swift */; };
+		27B1800D1C844973006EEC9D /* PitchLadder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FFA1C844972006EEC9D /* PitchLadder.swift */; };
+		27B1800E1C844973006EEC9D /* PrimaryFlightDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FFB1C844972006EEC9D /* PrimaryFlightDisplay.swift */; };
+		27B1800F1C844973006EEC9D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FFC1C844972006EEC9D /* Settings.swift */; };
+		27B180101C844973006EEC9D /* TapeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FFD1C844972006EEC9D /* TapeCell.swift */; };
+		27B180111C844973006EEC9D /* TapeCellContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FFE1C844972006EEC9D /* TapeCellContainer.swift */; };
+		27B180121C844973006EEC9D /* TapeCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FFF1C844972006EEC9D /* TapeCellModel.swift */; };
+		27B180131C844973006EEC9D /* TapeCellTriad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B180001C844973006EEC9D /* TapeCellTriad.swift */; };
+		27B180141C844973006EEC9D /* TapeIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B180011C844973006EEC9D /* TapeIndicator.swift */; };
+		27B180151C844973006EEC9D /* TapePointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B180021C844973006EEC9D /* TapePointer.swift */; };
+		27B180161C844996006EEC9D /* Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FF01C844972006EEC9D /* Additions.swift */; };
+		27B180171C844996006EEC9D /* Attitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FF11C844972006EEC9D /* Attitude.swift */; };
+		27B180181C844996006EEC9D /* AttitudeReferenceIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FF21C844972006EEC9D /* AttitudeReferenceIndex.swift */; };
+		27B180191C844996006EEC9D /* BankIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FF31C844972006EEC9D /* BankIndicator.swift */; };
+		27B1801A1C844996006EEC9D /* CGFloat+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FF41C844972006EEC9D /* CGFloat+Additions.swift */; };
+		27B1801B1C844996006EEC9D /* CGSize+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FF51C844972006EEC9D /* CGSize+Additions.swift */; };
+		27B1801C1C844996006EEC9D /* Horizon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FF61C844972006EEC9D /* Horizon.swift */; };
+		27B1801D1C844996006EEC9D /* Int+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FF71C844972006EEC9D /* Int+Additions.swift */; };
+		27B180201C844996006EEC9D /* PitchLadder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FFA1C844972006EEC9D /* PitchLadder.swift */; };
+		27B180211C844996006EEC9D /* PrimaryFlightDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FFB1C844972006EEC9D /* PrimaryFlightDisplay.swift */; };
+		27B180221C844996006EEC9D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FFC1C844972006EEC9D /* Settings.swift */; };
+		27B180231C844996006EEC9D /* TapeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FFD1C844972006EEC9D /* TapeCell.swift */; };
+		27B180241C844996006EEC9D /* TapeCellContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FFE1C844972006EEC9D /* TapeCellContainer.swift */; };
+		27B180251C844996006EEC9D /* TapeCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FFF1C844972006EEC9D /* TapeCellModel.swift */; };
+		27B180261C844996006EEC9D /* TapeCellTriad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B180001C844973006EEC9D /* TapeCellTriad.swift */; };
+		27B180271C844996006EEC9D /* TapeIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B180011C844973006EEC9D /* TapeIndicator.swift */; };
+		27B180281C844996006EEC9D /* TapePointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B180021C844973006EEC9D /* TapePointer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +58,23 @@
 		27B17FEA1C8445DD006EEC9D /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "iOS-Framework.xcconfig"; path = "Vendor/xcconfigs/iOS/iOS-Framework.xcconfig"; sourceTree = "<group>"; };
 		27B17FEC1C8445F6006EEC9D /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = Vendor/xcconfigs/Base/Configurations/Debug.xcconfig; sourceTree = "<group>"; };
 		27B17FEE1C844609006EEC9D /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Vendor/xcconfigs/Base/Configurations/Release.xcconfig; sourceTree = "<group>"; };
+		27B17FF01C844972006EEC9D /* Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Additions.swift; path = Sources/Additions.swift; sourceTree = "<group>"; };
+		27B17FF11C844972006EEC9D /* Attitude.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Attitude.swift; path = Sources/Attitude.swift; sourceTree = "<group>"; };
+		27B17FF21C844972006EEC9D /* AttitudeReferenceIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AttitudeReferenceIndex.swift; path = Sources/AttitudeReferenceIndex.swift; sourceTree = "<group>"; };
+		27B17FF31C844972006EEC9D /* BankIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BankIndicator.swift; path = Sources/BankIndicator.swift; sourceTree = "<group>"; };
+		27B17FF41C844972006EEC9D /* CGFloat+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CGFloat+Additions.swift"; path = "Sources/CGFloat+Additions.swift"; sourceTree = "<group>"; };
+		27B17FF51C844972006EEC9D /* CGSize+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CGSize+Additions.swift"; path = "Sources/CGSize+Additions.swift"; sourceTree = "<group>"; };
+		27B17FF61C844972006EEC9D /* Horizon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Horizon.swift; path = Sources/Horizon.swift; sourceTree = "<group>"; };
+		27B17FF71C844972006EEC9D /* Int+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Int+Additions.swift"; path = "Sources/Int+Additions.swift"; sourceTree = "<group>"; };
+		27B17FFA1C844972006EEC9D /* PitchLadder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PitchLadder.swift; path = Sources/PitchLadder.swift; sourceTree = "<group>"; };
+		27B17FFB1C844972006EEC9D /* PrimaryFlightDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PrimaryFlightDisplay.swift; path = Sources/PrimaryFlightDisplay.swift; sourceTree = "<group>"; };
+		27B17FFC1C844972006EEC9D /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Settings.swift; path = Sources/Settings.swift; sourceTree = "<group>"; };
+		27B17FFD1C844972006EEC9D /* TapeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TapeCell.swift; path = Sources/TapeCell.swift; sourceTree = "<group>"; };
+		27B17FFE1C844972006EEC9D /* TapeCellContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TapeCellContainer.swift; path = Sources/TapeCellContainer.swift; sourceTree = "<group>"; };
+		27B17FFF1C844972006EEC9D /* TapeCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TapeCellModel.swift; path = Sources/TapeCellModel.swift; sourceTree = "<group>"; };
+		27B180001C844973006EEC9D /* TapeCellTriad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TapeCellTriad.swift; path = Sources/TapeCellTriad.swift; sourceTree = "<group>"; };
+		27B180011C844973006EEC9D /* TapeIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TapeIndicator.swift; path = Sources/TapeIndicator.swift; sourceTree = "<group>"; };
+		27B180021C844973006EEC9D /* TapePointer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TapePointer.swift; path = Sources/TapePointer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +127,23 @@
 		27B17FCF1C84335D006EEC9D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				27B17FF01C844972006EEC9D /* Additions.swift */,
+				27B17FF11C844972006EEC9D /* Attitude.swift */,
+				27B17FF21C844972006EEC9D /* AttitudeReferenceIndex.swift */,
+				27B17FF31C844972006EEC9D /* BankIndicator.swift */,
+				27B17FF41C844972006EEC9D /* CGFloat+Additions.swift */,
+				27B17FF51C844972006EEC9D /* CGSize+Additions.swift */,
+				27B17FF61C844972006EEC9D /* Horizon.swift */,
+				27B17FF71C844972006EEC9D /* Int+Additions.swift */,
+				27B17FFA1C844972006EEC9D /* PitchLadder.swift */,
+				27B17FFB1C844972006EEC9D /* PrimaryFlightDisplay.swift */,
+				27B17FFC1C844972006EEC9D /* Settings.swift */,
+				27B17FFD1C844972006EEC9D /* TapeCell.swift */,
+				27B17FFE1C844972006EEC9D /* TapeCellContainer.swift */,
+				27B17FFF1C844972006EEC9D /* TapeCellModel.swift */,
+				27B180001C844973006EEC9D /* TapeCellTriad.swift */,
+				27B180011C844973006EEC9D /* TapeIndicator.swift */,
+				27B180021C844973006EEC9D /* TapePointer.swift */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -210,6 +278,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27B1800D1C844973006EEC9D /* PitchLadder.swift in Sources */,
+				27B1800E1C844973006EEC9D /* PrimaryFlightDisplay.swift in Sources */,
+				27B1800F1C844973006EEC9D /* Settings.swift in Sources */,
+				27B180101C844973006EEC9D /* TapeCell.swift in Sources */,
+				27B180151C844973006EEC9D /* TapePointer.swift in Sources */,
+				27B180111C844973006EEC9D /* TapeCellContainer.swift in Sources */,
+				27B180081C844973006EEC9D /* CGSize+Additions.swift in Sources */,
+				27B180091C844973006EEC9D /* Horizon.swift in Sources */,
+				27B180131C844973006EEC9D /* TapeCellTriad.swift in Sources */,
+				27B180031C844973006EEC9D /* Additions.swift in Sources */,
+				27B180121C844973006EEC9D /* TapeCellModel.swift in Sources */,
+				27B1800A1C844973006EEC9D /* Int+Additions.swift in Sources */,
+				27B180041C844973006EEC9D /* Attitude.swift in Sources */,
+				27B180071C844973006EEC9D /* CGFloat+Additions.swift in Sources */,
+				27B180051C844973006EEC9D /* AttitudeReferenceIndex.swift in Sources */,
+				27B180061C844973006EEC9D /* BankIndicator.swift in Sources */,
+				27B180141C844973006EEC9D /* TapeIndicator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +302,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27B180201C844996006EEC9D /* PitchLadder.swift in Sources */,
+				27B180211C844996006EEC9D /* PrimaryFlightDisplay.swift in Sources */,
+				27B180221C844996006EEC9D /* Settings.swift in Sources */,
+				27B180231C844996006EEC9D /* TapeCell.swift in Sources */,
+				27B180281C844996006EEC9D /* TapePointer.swift in Sources */,
+				27B180241C844996006EEC9D /* TapeCellContainer.swift in Sources */,
+				27B1801B1C844996006EEC9D /* CGSize+Additions.swift in Sources */,
+				27B1801C1C844996006EEC9D /* Horizon.swift in Sources */,
+				27B180261C844996006EEC9D /* TapeCellTriad.swift in Sources */,
+				27B180161C844996006EEC9D /* Additions.swift in Sources */,
+				27B180251C844996006EEC9D /* TapeCellModel.swift in Sources */,
+				27B1801D1C844996006EEC9D /* Int+Additions.swift in Sources */,
+				27B180171C844996006EEC9D /* Attitude.swift in Sources */,
+				27B1801A1C844996006EEC9D /* CGFloat+Additions.swift in Sources */,
+				27B180181C844996006EEC9D /* AttitudeReferenceIndex.swift in Sources */,
+				27B180191C844996006EEC9D /* BankIndicator.swift in Sources */,
+				27B180271C844996006EEC9D /* TapeIndicator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +420,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 27B17FEA1C8445DD006EEC9D /* iOS-Framework.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -328,6 +431,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.kouky.PrimaryFlightDisplay-iOS";
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -335,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 27B17FEA1C8445DD006EEC9D /* iOS-Framework.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
