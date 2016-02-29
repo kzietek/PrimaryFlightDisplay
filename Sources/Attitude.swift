@@ -9,8 +9,8 @@
 import SpriteKit
 
 protocol AttitudeType {
-    var rollRadians: Float { get }
-    var pitchRadians: Float { get }
+    var rollRadians: Double { get }
+    var pitchRadians: Double { get }
     
     func rollAction() -> SKAction
     func pitchAction(sceneSize sceneSize: CGSize) -> SKAction
@@ -37,7 +37,7 @@ extension AttitudeType {
     }
 }
 
-public struct Attitude: AttitudeType {
-    public let pitchRadians: Float
-    public let rollRadians: Float
+struct Attitude: AttitudeType {
+    let pitchRadians: Double
+    let rollRadians: Double
 }

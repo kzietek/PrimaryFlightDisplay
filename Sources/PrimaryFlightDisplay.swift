@@ -47,12 +47,10 @@ public class PrimaryFlightDisplayView: SKView {
             scene.setAltitude(altitude)
         }
     }
-}
-
-extension PrimaryFlightDisplayView: AttitudeSettable {
-    func setAttitude(attitude: AttitudeType) {
+    
+    public func setAttitude(roll: Double, pitch: Double) {
         if let scene = scene as? PrimaryFlightDisplayScene {
-            scene.setAttitude(attitude)
+            scene.setAttitude(Attitude(pitchRadians: pitch, rollRadians: roll))
         }
     }
 }
