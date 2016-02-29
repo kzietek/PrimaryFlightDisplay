@@ -30,9 +30,9 @@ public class PrimaryFlightDisplayView: SKView {
         ignoresSiblingOrder = true        
     }
     
-    public func setHeading(heading: Double) {
+    public func setHeading(headingDegree: Double) {
         if let scene = scene as? PrimaryFlightDisplayScene {
-            scene.setHeading(heading)
+            scene.setHeading(headingDegree)
         }
     }
     
@@ -48,9 +48,9 @@ public class PrimaryFlightDisplayView: SKView {
         }
     }
     
-    public func setAttitude(roll: Double, pitch: Double) {
+    public func setAttitude(rollRadians rollRadians: Double, pitchRadians: Double) {
         if let scene = scene as? PrimaryFlightDisplayScene {
-            scene.setAttitude(Attitude(pitchRadians: pitch, rollRadians: roll))
+            scene.setAttitude(Attitude(pitchRadians: pitchRadians, rollRadians: rollRadians))
         }
     }
 }
