@@ -1,6 +1,6 @@
 //
 //  Horizon.swift
-//  MavlinkPrimaryFlightDisplay
+//  PrimaryFlightDisplay
 //
 //  Created by Michael Koukoullis on 21/11/2015.
 //  Copyright © 2015 Michael Koukoullis. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  TapeCell.swift
-//  MavlinkPrimaryFlightDisplay
+//  PrimaryFlightDisplay
 //
 //  Created by Michael Koukoullis on 23/01/2016.
 //  Copyright © 2016 Michael Koukoullis. All rights reserved.

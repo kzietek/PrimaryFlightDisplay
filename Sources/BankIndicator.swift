@@ -1,13 +1,12 @@
 //
 //  BankIndicator.swift
-//  MavlinkPrimaryFlightDisplay
+//  PrimaryFlightDisplay
 //
 //  Created by Michael Koukoullis on 14/01/2016.
 //  Copyright © 2016 Michael Koukoullis. All rights reserved.
 //
 
 import SpriteKit
-import Darwin
 
 class BankIndicator: SKNode {
     
