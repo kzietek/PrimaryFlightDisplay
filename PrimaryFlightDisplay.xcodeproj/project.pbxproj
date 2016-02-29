@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		27B17FC81C84309F006EEC9D /* PrimaryFlightDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B17FC71C84309F006EEC9D /* PrimaryFlightDisplay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27B17FD31C843382006EEC9D /* PrimaryFlightDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B17FD21C843382006EEC9D /* PrimaryFlightDisplay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		27B17FC41C84309F006EEC9D /* PrimaryFlightDisplay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PrimaryFlightDisplay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		27B17FC71C84309F006EEC9D /* PrimaryFlightDisplay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrimaryFlightDisplay.h; sourceTree = "<group>"; };
-		27B17FC91C84309F006EEC9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27B17FD01C843377006EEC9D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = SOURCE_ROOT; };
+		27B17FD21C843382006EEC9D /* PrimaryFlightDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrimaryFlightDisplay.h; path = Sources/PrimaryFlightDisplay.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,7 +30,8 @@
 		27B17FBA1C84309F006EEC9D = {
 			isa = PBXGroup;
 			children = (
-				27B17FC61C84309F006EEC9D /* PrimaryFlightDisplay */,
+				27B17FCF1C84335D006EEC9D /* Sources */,
+				27B17FC61C84309F006EEC9D /* Resources */,
 				27B17FC51C84309F006EEC9D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,13 +44,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		27B17FC61C84309F006EEC9D /* PrimaryFlightDisplay */ = {
+		27B17FC61C84309F006EEC9D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				27B17FC71C84309F006EEC9D /* PrimaryFlightDisplay.h */,
-				27B17FC91C84309F006EEC9D /* Info.plist */,
+				27B17FD01C843377006EEC9D /* Info.plist */,
 			);
+			name = Resources;
 			path = PrimaryFlightDisplay;
+			sourceTree = "<group>";
+		};
+		27B17FCF1C84335D006EEC9D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				27B17FD21C843382006EEC9D /* PrimaryFlightDisplay.h */,
+			);
+			name = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,7 +68,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27B17FC81C84309F006EEC9D /* PrimaryFlightDisplay.h in Headers */,
+				27B17FD31C843382006EEC9D /* PrimaryFlightDisplay.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +241,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = PrimaryFlightDisplay/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.kouky.PrimaryFlightDisplay;
@@ -248,7 +257,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = PrimaryFlightDisplay/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.kouky.PrimaryFlightDisplay;
@@ -276,6 +285,7 @@
 				27B17FCE1C84309F006EEC9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
