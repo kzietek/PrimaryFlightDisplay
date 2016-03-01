@@ -13,7 +13,7 @@
 		27B17FEB1C8445DD006EEC9D /* iOS-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 27B17FEA1C8445DD006EEC9D /* iOS-Framework.xcconfig */; };
 		27B17FED1C8445F6006EEC9D /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 27B17FEC1C8445F6006EEC9D /* Debug.xcconfig */; };
 		27B17FEF1C844609006EEC9D /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 27B17FEE1C844609006EEC9D /* Release.xcconfig */; };
-		27B180031C844973006EEC9D /* Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FF01C844972006EEC9D /* Additions.swift */; };
+		27B180031C844973006EEC9D /* Double+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FF01C844972006EEC9D /* Double+Additions.swift */; };
 		27B180041C844973006EEC9D /* Attitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FF11C844972006EEC9D /* Attitude.swift */; };
 		27B180051C844973006EEC9D /* AttitudeReferenceIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FF21C844972006EEC9D /* AttitudeReferenceIndex.swift */; };
 		27B180061C844973006EEC9D /* BankIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FF31C844972006EEC9D /* BankIndicator.swift */; };
@@ -30,7 +30,7 @@
 		27B180131C844973006EEC9D /* TapeCellTriad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B180001C844973006EEC9D /* TapeCellTriad.swift */; };
 		27B180141C844973006EEC9D /* TapeIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B180011C844973006EEC9D /* TapeIndicator.swift */; };
 		27B180151C844973006EEC9D /* TapePointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B180021C844973006EEC9D /* TapePointer.swift */; };
-		27B180161C844996006EEC9D /* Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FF01C844972006EEC9D /* Additions.swift */; };
+		27B180161C844996006EEC9D /* Double+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FF01C844972006EEC9D /* Double+Additions.swift */; };
 		27B180171C844996006EEC9D /* Attitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FF11C844972006EEC9D /* Attitude.swift */; };
 		27B180181C844996006EEC9D /* AttitudeReferenceIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FF21C844972006EEC9D /* AttitudeReferenceIndex.swift */; };
 		27B180191C844996006EEC9D /* BankIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FF31C844972006EEC9D /* BankIndicator.swift */; };
@@ -58,7 +58,7 @@
 		27B17FEA1C8445DD006EEC9D /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "iOS-Framework.xcconfig"; path = "Vendor/xcconfigs/iOS/iOS-Framework.xcconfig"; sourceTree = "<group>"; };
 		27B17FEC1C8445F6006EEC9D /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = Vendor/xcconfigs/Base/Configurations/Debug.xcconfig; sourceTree = "<group>"; };
 		27B17FEE1C844609006EEC9D /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Vendor/xcconfigs/Base/Configurations/Release.xcconfig; sourceTree = "<group>"; };
-		27B17FF01C844972006EEC9D /* Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Additions.swift; path = Sources/Additions.swift; sourceTree = "<group>"; };
+		27B17FF01C844972006EEC9D /* Double+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Double+Additions.swift"; path = "Sources/Double+Additions.swift"; sourceTree = "<group>"; };
 		27B17FF11C844972006EEC9D /* Attitude.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Attitude.swift; path = Sources/Attitude.swift; sourceTree = "<group>"; };
 		27B17FF21C844972006EEC9D /* AttitudeReferenceIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AttitudeReferenceIndex.swift; path = Sources/AttitudeReferenceIndex.swift; sourceTree = "<group>"; };
 		27B17FF31C844972006EEC9D /* BankIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BankIndicator.swift; path = Sources/BankIndicator.swift; sourceTree = "<group>"; };
@@ -127,14 +127,10 @@
 		27B17FCF1C84335D006EEC9D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				27B17FF01C844972006EEC9D /* Additions.swift */,
 				27B17FF11C844972006EEC9D /* Attitude.swift */,
 				27B17FF21C844972006EEC9D /* AttitudeReferenceIndex.swift */,
 				27B17FF31C844972006EEC9D /* BankIndicator.swift */,
-				27B17FF41C844972006EEC9D /* CGFloat+Additions.swift */,
-				27B17FF51C844972006EEC9D /* CGSize+Additions.swift */,
 				27B17FF61C844972006EEC9D /* Horizon.swift */,
-				27B17FF71C844972006EEC9D /* Int+Additions.swift */,
 				27B17FFA1C844972006EEC9D /* PitchLadder.swift */,
 				27B17FFB1C844972006EEC9D /* PrimaryFlightDisplay.swift */,
 				27B17FFC1C844972006EEC9D /* Settings.swift */,
@@ -144,6 +140,7 @@
 				27B180001C844973006EEC9D /* TapeCellTriad.swift */,
 				27B180011C844973006EEC9D /* TapeIndicator.swift */,
 				27B180021C844973006EEC9D /* TapePointer.swift */,
+				27B180351C857F84006EEC9D /* NumericExtensions */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -157,6 +154,17 @@
 				27B17FE81C8445C9006EEC9D /* Mac-Framework.xcconfig */,
 			);
 			name = Config;
+			sourceTree = "<group>";
+		};
+		27B180351C857F84006EEC9D /* NumericExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				27B17FF01C844972006EEC9D /* Double+Additions.swift */,
+				27B17FF41C844972006EEC9D /* CGFloat+Additions.swift */,
+				27B17FF51C844972006EEC9D /* CGSize+Additions.swift */,
+				27B17FF71C844972006EEC9D /* Int+Additions.swift */,
+			);
+			name = NumericExtensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,7 +295,7 @@
 				27B180081C844973006EEC9D /* CGSize+Additions.swift in Sources */,
 				27B180091C844973006EEC9D /* Horizon.swift in Sources */,
 				27B180131C844973006EEC9D /* TapeCellTriad.swift in Sources */,
-				27B180031C844973006EEC9D /* Additions.swift in Sources */,
+				27B180031C844973006EEC9D /* Double+Additions.swift in Sources */,
 				27B180121C844973006EEC9D /* TapeCellModel.swift in Sources */,
 				27B1800A1C844973006EEC9D /* Int+Additions.swift in Sources */,
 				27B180041C844973006EEC9D /* Attitude.swift in Sources */,
@@ -311,7 +319,7 @@
 				27B1801B1C844996006EEC9D /* CGSize+Additions.swift in Sources */,
 				27B1801C1C844996006EEC9D /* Horizon.swift in Sources */,
 				27B180261C844996006EEC9D /* TapeCellTriad.swift in Sources */,
-				27B180161C844996006EEC9D /* Additions.swift in Sources */,
+				27B180161C844996006EEC9D /* Double+Additions.swift in Sources */,
 				27B180251C844996006EEC9D /* TapeCellModel.swift in Sources */,
 				27B1801D1C844996006EEC9D /* Int+Additions.swift in Sources */,
 				27B180171C844996006EEC9D /* Attitude.swift in Sources */,

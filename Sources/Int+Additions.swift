@@ -13,4 +13,8 @@ extension Int {
     var radians: CGFloat {
         return CGFloat.radiansPerDegree * CGFloat(self)
     }
+    
+    var compassValue: Double {
+        return Double(self).compassValue
+    }
 }

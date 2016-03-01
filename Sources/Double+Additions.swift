@@ -1,16 +1,10 @@
 //
-//  Additions.swift
+//  Double+Additions.swift
 //  PrimaryFlightDisplay
 //
 //  Created by Michael Koukoullis on 7/01/2016.
 //  Copyright © 2016 Michael Koukoullis. All rights reserved.
 //
-
-extension Int {
-    var compassValue: Double {
-        return Double(self).compassValue
-    }
-}
 
 extension Double {
     var compassValue: Double {
