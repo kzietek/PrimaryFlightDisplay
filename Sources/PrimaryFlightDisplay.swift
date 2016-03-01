@@ -30,9 +30,9 @@ public class PrimaryFlightDisplayView: SKView {
         ignoresSiblingOrder = true        
     }
     
-    public func setHeading(headingDegree: Double) {
+    public func setHeadingDegree(degree: Double) {
         if let scene = scene as? PrimaryFlightDisplayScene {
-            scene.setHeading(headingDegree)
+            scene.setHeadingDegree(degree)
         }
     }
     
@@ -103,8 +103,8 @@ class PrimaryFlightDisplayScene: SKScene {
         headingIndicator.recycleCells()
     }
     
-    func setHeading(heading: Double) {
-        headingIndicator.value = heading
+    func setHeadingDegree(degree: Double) {
+        headingIndicator.value = degree
     }
     
     func setAltitude(altitude: Double) {
