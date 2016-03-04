@@ -26,6 +26,8 @@ public struct DefaultSettings: SettingsType {
     public var altimeter: TapeIndicatorStyleType = DefaultAltimeterStyle()
     public var airSpeedIndicator: TapeIndicatorStyleType = DefaultAirspeedIndicatorStyle()
     public var headingIndicator: TapeIndicatorStyleType = DefaultHeadingIndicatorStyle()
+    
+    public init() {}
 }
 
 // MARK: HorizonStyle
@@ -40,6 +42,8 @@ public struct DefaultHorizonStyle: HorizonStyleType {
     public var skyColor = SKColor(red: 0.078, green: 0.490, blue: 0.816, alpha: 1.00)
     public var groundColor = SKColor(red: 0.667, green: 0.855, blue: 0.196, alpha: 1.00)
     public var zeroPitchLineColor = SKColor(red: 0.8, green: 0.8, blue: 0.8, alpha: 1)
+    
+    public init() {}
 }
 
 // MARK: AttitudeReferenceIndexStyle
@@ -60,6 +64,8 @@ public struct DefaultAttitudeReferenceIndexStyle: AttitudeReferenceIndexStyleTyp
     public var sideBarWidth = 120
     public var sideBarHeight = 20
     public var sideBarOffset = 70
+    
+    public init() {}
 }
 
 // MARK: PitchLadder
@@ -82,6 +88,8 @@ public struct DefaultPitchLadderStyle: PitchLadderStyleType {
     public var minorLineWidth = 20
     public var majorLineWidth = 50
     public var markerTextOffset = 10
+    
+    public init() {}
 }
 
 // MARK: BankIndicator
@@ -116,6 +124,8 @@ public struct DefaultBankIndicatorStyle: BankIndicatorStyleType {
     public var markerTextOffset = 20
     public var skyPointerHeight = 12
     public var skyPointerWidth = 12
+    
+    public init() {}
 }
 
 // MARK: TapeIndicator
@@ -166,6 +176,8 @@ public struct DefaultAltimeterStyle: TapeIndicatorStyleType {
     public var markerTextOffset = 20
     public var markerColor = SKColor.whiteColor()
     public var markerTextColor = SKColor.whiteColor()
+    
+    public init() {}
 }
 
 public struct DefaultAirspeedIndicatorStyle: TapeIndicatorStyleType {
@@ -184,6 +196,8 @@ public struct DefaultAirspeedIndicatorStyle: TapeIndicatorStyleType {
     public var markerTextOffset = 20
     public var markerColor = SKColor.whiteColor()
     public var markerTextColor = SKColor.whiteColor()
+    
+    public init() {}
 }
 
 public struct DefaultHeadingIndicatorStyle: TapeIndicatorStyleType {
@@ -202,6 +216,8 @@ public struct DefaultHeadingIndicatorStyle: TapeIndicatorStyleType {
     public var markerTextOffset = 22
     public var markerColor = SKColor.whiteColor()
     public var markerTextColor = SKColor.whiteColor()
+    
+    public init() {}
 }
 
 extension TapeIndicatorStyleType {
@@ -255,4 +271,6 @@ public protocol FontType {
 public struct DefaultFont: FontType {
     public var family = "Helvetica-Bold"
     public var size: CGFloat = 16
+    
+    public init() {}
 }
