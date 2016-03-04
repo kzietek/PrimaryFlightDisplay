@@ -24,7 +24,7 @@ PrimaryFlightDisplay is a Mac + iOS framework for use in ground control station 
 
 ## Requirements
 
-- iOS 9.0+ / Mac OS X 10.10+ / tvOS 9.0+ / watchOS 2.0+
+- iOS 9.0+ / Mac OS X 10.10+
 - Xcode 7.2+
 
 ## Installation
@@ -78,7 +78,7 @@ Run `carthage update` to build the framework and drag the built `PrimaryFlightDi
 
 ## Usage
 
-Construct a new `PrimaryFlightDisplayView`, and add it it your view hierarchy.
+Construct a new `PrimaryFlightDisplayView` with default styles, and add it it your view hierarchy.
 
 
 ```swift
@@ -94,6 +94,58 @@ Send flight data to the primary flight display using the following API methods. 
     flightView.setHeadingDegree(Double(300))
     flightView.setAirSpeed(Double(20))
     flightView.setAltitude(Double(165))
+```
+
+### Custom Styles
+
+The styles for the default primary flight display are easily tuned, see [Settings.swift](https://github.com/kouky/PrimaryFlightDisplay/blob/master/Sources/Settings.swift) for all the tuneable styles. As an exercise lets set the styles to create the primary flight display in the screenshot below.
+
+![Screenshot](http://kouky.org/assets/primary-flight-display/alternative-screenshot.png)
+
+Start with the default styles.
+
+```swift
+var settings = DefaultSettings()
+```
+
+Change the ground color to brown.
+
+```swift
+settings.horizon.groundColor = SKColor.brownColor()
+```
+
+Change the sky pointer color to pink, increase the bank indicator arc maximum degree to `75` and reduce the arc radius slightly.
+
+```swift
+let pinkColor = SKColor(red:1.00, green:0.11, blue:0.56, alpha:1.0)
+settings.bankIndicator.skyPointerFillColor = pinkColor
+settings.bankIndicator.arcMaximumDisplayDegree = 75
+settings.bankIndicator.arcRadius = 160
+```
+
+Set the attitude reference index to pink and reduce its size slightly so it fits within the smaller bank indicator radius.
+
+```swift
+settings.attitudeReferenceIndex.fillColor = pinkColor
+settings.attitudeReferenceIndex.sideBarWidth = 80
+settings.attitudeReferenceIndex.sideBarHeight = 15
+```
+
+Make the heading indicator wider and slimmer, display a minor marker every degree and a major marker every 10 degrees. Increase the points (pixels) per value to 8, meaning the numbers are more spread out.
+
+```swift
+settings.headingIndicator.pointsPerUnitValue = 8
+settings.headingIndicator.size.width = 800
+settings.headingIndicator.size.height = 40
+settings.headingIndicator.markerTextOffset = 15
+settings.headingIndicator.minorMarkerFrequency = 1
+settings.headingIndicator.majorMarkerFrequency = 10
+```
+
+Once done customizing the styles construct a new primary flight display view with the custom settings.
+
+```swift
+let flightView = PrimaryFlightDisplayView(frame: frame, settings: settings)
 ```
 
 ## Example Project
