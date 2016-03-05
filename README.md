@@ -152,10 +152,10 @@ let flightView = PrimaryFlightDisplayView(frame: frame, settings: settings)
 
 [MavlinkPrimaryFlightDisplay](https://github.com/kouky/MavlinkPrimaryFlightDisplay) demonstrates how to:
 - integrate the PrimaryFlightDisplay framework into a Mac application
+- customize the display style of the Primary Flight Display
 - connect to Pixhawk over USB, Bluetooth, and 3DR radio telemetry
-- decode MAVLink attitude, heading, airspeed, and altitude messages
+- decode [MAVLink](http://qgroundcontrol.org/mavlink/start) attitude, heading, airspeed, and altitude messages
 - send decoded data to the primary flight display for real time updates
-
 
 ## Contributing
 
