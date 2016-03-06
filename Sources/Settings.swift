@@ -200,7 +200,7 @@ public struct DefaultAirspeedIndicatorStyle: TapeIndicatorStyleType {
     public var markerTextOffset = 20
     public var markerColor = SKColor.whiteColor()
     public var markerTextColor = SKColor.whiteColor()
-    public var legend: Legend? = (key: "GND SPD",  value: "MTR/SEC")
+    public var legend: Legend? = (key: "AIR SPD",  value: "MTR/SEC")
 
     public init() {}
 }
