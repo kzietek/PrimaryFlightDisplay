@@ -142,6 +142,8 @@ public enum TapeMarkerJustification {
     case Right
 }
 
+public typealias Legend = (key: String, value: String)
+
 public protocol TapeIndicatorStyleType {
     var size:                   CGSize { get set }
     var type:                   TapeType { get set }
@@ -157,7 +159,8 @@ public protocol TapeIndicatorStyleType {
     var minorMarkerFrequency:   Int { get set }
     var markerTextOffset:       Int { get set }
     var markerColor:            SKColor { get set }
-    var markerTextColor:        SKColor { get set }    
+    var markerTextColor:        SKColor { get set }
+    var legend:                 Legend? { get set }
 }
 
 public struct DefaultAltimeterStyle: TapeIndicatorStyleType {
@@ -176,6 +179,7 @@ public struct DefaultAltimeterStyle: TapeIndicatorStyleType {
     public var markerTextOffset = 20
     public var markerColor = SKColor.whiteColor()
     public var markerTextColor = SKColor.whiteColor()
+    public var legend: Legend? = (key: "ALT MSL",  value: "METRES")
     
     public init() {}
 }
@@ -196,7 +200,8 @@ public struct DefaultAirspeedIndicatorStyle: TapeIndicatorStyleType {
     public var markerTextOffset = 20
     public var markerColor = SKColor.whiteColor()
     public var markerTextColor = SKColor.whiteColor()
-    
+    public var legend: Legend? = (key: "GND SPD",  value: "MTR/SEC")
+
     public init() {}
 }
 
@@ -215,12 +220,14 @@ public struct DefaultHeadingIndicatorStyle: TapeIndicatorStyleType {
     public var minorMarkerFrequency = 5
     public var markerTextOffset = 22
     public var markerColor = SKColor.whiteColor()
-    public var markerTextColor = SKColor.whiteColor()
+    public var markerTextColor = SKColor.whiteColor()    
+    public var legend: Legend? = nil
     
     public init() {}
 }
 
 extension TapeIndicatorStyleType {
+    
     public func labelForValue(value: Int) -> String  {
         switch type {
         case .Continuous:
