@@ -6,20 +6,23 @@
 [![License MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/kouky/MavlinkPrimaryFlightDisplay/blob/master/LICENSE)
 
 
-PrimaryFlightDisplay is a Mac + iOS framework for use in ground control station and telemetry systems for unmanned aerial vehicles (UAV).
+PrimaryFlightDisplay is a Mac + iOS framework for use in ground control station and telemetry systems for [micro UAVs](https://en.wikipedia.org/wiki/Miniature_UAV) (unmanned aerial vehicles).
+
+The framework enables covenient embedding and animation of a primary flight display. Styles and colors are easily tuned whilst maintaining crisp graphics for any screen resolution.
 
 ![Screenshot](http://kouky.org/assets/primary-flight-display/default-screenshot.png)
 
 ## Features
 
 - [x] Artificial horizon
-- [x] Pitch Ladder
+- [x] Pitch ladder
+- [x] Bank indicator
 - [x] Heading tape indicator
-- [x] Airspeed tape indicator
+- [x] Airspeed / Groundspeed tape indicator
 - [x] Altitude tape indicator
-- [x] Crisp proceduarlly generated graphics
+- [x] Crisp procedurally generated graphics
 - [x] Highly configurable colors, sizes, and tape indicator scales
-- [x] No dependenices other than Apple's Sprite Kit framework
+- [x] No library dependenices other than Apple's SpriteKit
 - [x] Flight stack and protocol agnostic
 
 ## Requirements
@@ -78,7 +81,7 @@ Run `carthage update` to build the framework and drag the built `PrimaryFlightDi
 
 ## Usage
 
-Construct a new `PrimaryFlightDisplayView` with default styles, and add it it your view hierarchy.
+Construct a new `PrimaryFlightDisplayView` with default styles, and add it to your view hierarchy.
 
 
 ```swift
@@ -98,64 +101,15 @@ Send flight data to the primary flight display using the following API methods. 
 
 ### Custom Styles
 
-The styles for the default primary flight display are easily tuned, see [Settings.swift](https://github.com/kouky/PrimaryFlightDisplay/blob/master/Sources/Settings.swift) for all the tuneable styles. As an exercise lets set the styles to create the primary flight display in the screenshot below.
+The styles for the default primary flight display are easily tuned, see [Settings.swift](https://github.com/kouky/PrimaryFlightDisplay/blob/master/Sources/Settings.swift) for all tuneable styles.
+
+[See the blog post](http://kouky.org/blog/2016/03/20/primary-flight-display-mavlink-ios-mac.html) and example project [MavlinkPrimaryFlightDisplay](https://github.com/kouky/MavlinkPrimaryFlightDisplay) which demonstrate how to create the primary flight display in the screenshot below.
 
 ![Screenshot](http://kouky.org/assets/primary-flight-display/alternative-screenshot.png)
 
-Start with the default styles.
-
-```swift
-var settings = DefaultSettings()
-```
-
-Change the ground color to brown.
-
-```swift
-settings.horizon.groundColor = SKColor.brownColor()
-```
-
-Change the sky pointer color to pink, increase the bank indicator arc maximum degree to `75` and reduce the arc radius slightly.
-
-```swift
-let pinkColor = SKColor(red:1.00, green:0.11, blue:0.56, alpha:1.0)
-settings.bankIndicator.skyPointerFillColor = pinkColor
-settings.bankIndicator.arcMaximumDisplayDegree = 75
-settings.bankIndicator.arcRadius = 160
-```
-
-Set the attitude reference index to pink and reduce its size slightly so it fits within the smaller bank indicator radius.
-
-```swift
-settings.attitudeReferenceIndex.fillColor = pinkColor
-settings.attitudeReferenceIndex.sideBarWidth = 80
-settings.attitudeReferenceIndex.sideBarHeight = 15
-```
-
-Make the heading indicator wider and slimmer, display a minor marker every degree and a major marker every 10 degrees. Increase the points (pixels) per value to 8, meaning the numbers are more spread out.
-
-```swift
-settings.headingIndicator.pointsPerUnitValue = 8
-settings.headingIndicator.size.width = 800
-settings.headingIndicator.size.height = 40
-settings.headingIndicator.markerTextOffset = 15
-settings.headingIndicator.minorMarkerFrequency = 1
-settings.headingIndicator.majorMarkerFrequency = 10
-```
-
-Once done customizing the styles construct a new primary flight display view with the custom settings.
-
-```swift
-let flightView = PrimaryFlightDisplayView(frame: frame, settings: settings)
-```
-
 ## Example Project
 
-[MavlinkPrimaryFlightDisplay](https://github.com/kouky/MavlinkPrimaryFlightDisplay) demonstrates how to:
-- integrate the PrimaryFlightDisplay framework into a Mac application
-- customize the display style of the Primary Flight Display
-- connect to Pixhawk over USB, Bluetooth, and 3DR radio telemetry
-- decode [MAVLink](http://qgroundcontrol.org/mavlink/start) attitude, heading, airspeed, and altitude messages
-- send decoded data to the primary flight display for real time updates
+[MavlinkPrimaryFlightDisplay](https://github.com/kouky/MavlinkPrimaryFlightDisplay) is a Mac app which demonstrates how to integrate the PrimaryFlightDisplay framework for a [MAVLink](http://qgroundcontrol.org/mavlink/start) speaking autopilot. Clone the repo and follow the `README` to get the app running and connect to your autopilot.
 
 ## Contributing
 
