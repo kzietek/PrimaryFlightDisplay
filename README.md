@@ -8,7 +8,7 @@
 
 PrimaryFlightDisplay is a Mac + iOS framework for use in ground control station and telemetry systems for [micro UAVs](https://en.wikipedia.org/wiki/Miniature_UAV) (unmanned aerial vehicles).
 
-The framework enables covenient embedding and animation of a primary flight display. Styles and colors are easily tuned whilst maintaining crisp graphics for any screen resolution.
+The framework enables convenient embedding and animation of a primary flight display. Styles and colors are easily tuned whilst maintaining crisp graphics for any screen resolution.
 
 ![Screenshot](http://kouky.org/assets/primary-flight-display/default-screenshot.png)
 
@@ -24,6 +24,7 @@ The framework enables covenient embedding and animation of a primary flight disp
 - [x] Highly configurable colors, sizes, and tape indicator scales
 - [x] No library dependenices other than Apple's SpriteKit
 - [x] Flight stack and protocol agnostic
+- [x] Compatible with MAVLink
 
 ## Requirements
 
