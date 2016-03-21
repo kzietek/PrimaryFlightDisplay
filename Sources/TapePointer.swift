@@ -58,11 +58,11 @@ class TapePointer: SKNode {
 
         legendKeyLabelNode?.fontName = style.font.family
         legendKeyLabelNode?.fontSize = round(style.font.size * CGFloat(0.5))
-        legendKeyLabelNode?.fontColor = style.markerTextColor.colorWithAlphaComponent(0.5)
+        legendKeyLabelNode?.fontColor = style.markerTextColor.colorWithAlphaComponent(0.7)
 
         legendValueLabelNode?.fontName = style.font.family
         legendValueLabelNode?.fontSize = round(style.font.size * CGFloat(0.5))
-        legendValueLabelNode?.fontColor = style.markerTextColor.colorWithAlphaComponent(0.5)
+        legendValueLabelNode?.fontColor = style.markerTextColor.colorWithAlphaComponent(0.7)
 
         switch style.markerJustification {
         case .Top:
