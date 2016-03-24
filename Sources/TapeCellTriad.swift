@@ -31,7 +31,7 @@ extension TapeCellTriad: SequenceType {
     func generate() -> AnyGenerator<TapeCell> {
         var nextIndex = 0
         
-        return anyGenerator {
+        return AnyGenerator {
             guard nextIndex < self.cells.count else { return nil }
             
             let cell = self.cells[nextIndex]

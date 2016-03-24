@@ -25,7 +25,7 @@ class AttitudeReferenceIndex: SKNode {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func buildLeftBar(var transform transform: CGAffineTransform) -> SKShapeNode {
+    private func buildLeftBar(transform transform: CGAffineTransform) -> SKShapeNode {
         let width = CGFloat(style.sideBarWidth)
         let height = CGFloat(style.sideBarHeight)
         
@@ -38,7 +38,8 @@ class AttitudeReferenceIndex: SKNode {
         CGPathAddLineToPoint(path, nil, -width, -2)
         CGPathCloseSubpath(path)
 
-        let transformedPath = withUnsafeMutablePointer(&transform) {
+        var trans = transform
+        let transformedPath = withUnsafeMutablePointer(&trans) {
             CGPathCreateMutableCopyByTransformingPath(path, $0)
         }
         
