@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		270D5FD01C858D8700FB478A /* PrimaryFlightDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = 270D5FCF1C858D8700FB478A /* PrimaryFlightDisplay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		270D5FD11C858D9C00FB478A /* PrimaryFlightDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = 270D5FCF1C858D8700FB478A /* PrimaryFlightDisplay.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		27B17FE91C8445C9006EEC9D /* Mac-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 27B17FE81C8445C9006EEC9D /* Mac-Framework.xcconfig */; };
-		27B17FEB1C8445DD006EEC9D /* iOS-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 27B17FEA1C8445DD006EEC9D /* iOS-Framework.xcconfig */; };
-		27B17FED1C8445F6006EEC9D /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 27B17FEC1C8445F6006EEC9D /* Debug.xcconfig */; };
-		27B17FEF1C844609006EEC9D /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 27B17FEE1C844609006EEC9D /* Release.xcconfig */; };
 		27B180031C844973006EEC9D /* Double+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FF01C844972006EEC9D /* Double+Additions.swift */; };
 		27B180041C844973006EEC9D /* Attitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FF11C844972006EEC9D /* Attitude.swift */; };
 		27B180051C844973006EEC9D /* AttitudeReferenceIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B17FF21C844972006EEC9D /* AttitudeReferenceIndex.swift */; };
@@ -231,7 +227,7 @@
 		27B17FBB1C84309F006EEC9D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Michael Koukoullis";
 				TargetAttributes = {
 					27B17FC31C84309F006EEC9D = {
@@ -265,10 +261,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27B17FEF1C844609006EEC9D /* Release.xcconfig in Resources */,
-				27B17FE91C8445C9006EEC9D /* Mac-Framework.xcconfig in Resources */,
-				27B17FEB1C8445DD006EEC9D /* iOS-Framework.xcconfig in Resources */,
-				27B17FED1C8445F6006EEC9D /* Debug.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
