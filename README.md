@@ -37,29 +37,9 @@ Build and install the framework using Cocoapods or Carthage.
 
 ### CocoaPods
 
-[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+[CocoaPods](http://cocoapods.org) is a dependency manager for iOS and MacOS projects. Follow the [getting started guide](https://guides.cocoapods.org/using/getting-started.html) to install it.
 
-```bash
-$ gem install cocoapods
-```
-
-> CocoaPods 0.39.0+ is required to build PrimaryFlightDisplay
-
-To integrate PrimaryFlightDisplay into your Xcode project using CocoaPods, specify it in your `Podfile`:
-
-```ruby
-source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
-use_frameworks!
-
-pod 'PrimaryFlightDisplay'
-```
-
-Then, run the following command:
-
-```bash
-$ pod install
-```
+Follow the using [cocoapods guide](https://guides.cocoapods.org/using/using-cocoapods) to install the `PrimaryFlightDisplay` pod in your project.
 
 ### Carthage
 
