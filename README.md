@@ -67,7 +67,7 @@ Construct a new `PrimaryFlightDisplayView` with default styles, and add it to yo
 
 ```swift
 let flightView = PrimaryFlightDisplayView(frame: frame)
-flightView.autoresizingMask = [.ViewHeightSizable, .ViewWidthSizable]
+flightView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
 addSubview(flightView)
 ```
 
