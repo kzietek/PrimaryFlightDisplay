@@ -226,6 +226,7 @@
 				TargetAttributes = {
 					27B17FC31C84309F006EEC9D = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 1010;
 					};
 					27B17FD81C843D73006EEC9D = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -434,6 +435,7 @@
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -454,6 +456,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.kouky.PrimaryFlightDisplay-iOS";
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
