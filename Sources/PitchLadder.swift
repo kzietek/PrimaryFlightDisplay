@@ -8,6 +8,8 @@
 
 import SpriteKit
 
+private let scaleY = CGFloat(1.5)
+
 class PitchLadder: SKNode {
     
     let sceneSize: CGSize
@@ -49,8 +51,9 @@ class PitchLadder: SKNode {
 extension PitchLadder: AttitudeSettable {
     
     func setAttitude(_ attitude: AttitudeType) {
-        cropNode.run(attitude.pitchAction(sceneSize: sceneSize))
-        maskNode.run(attitude.pitchReverseAction(sceneSize: sceneSize))
+        let scaledSize = CGSize(width: sceneSize.width, height: sceneSize.height * scaleY)
+        cropNode.run(attitude.pitchAction(sceneSize: scaledSize))
+        maskNode.run(attitude.pitchReverseAction(sceneSize: scaledSize))
         run(attitude.rollAction())
     }
 }
@@ -74,7 +77,7 @@ private struct PitchLineBuilder {
         path.addLine(to: CGPoint(x: -halfWidth, y: -lineThickness * 0.5))
         path.closeSubpath()
         
-        var transform = CGAffineTransform(translationX: 0, y: CGFloat(degree) * sceneSize.pointsPerDegree)
+        var transform = CGAffineTransform(translationX: 0, y: CGFloat(degree) * sceneSize.pointsPerDegree * scaleY)
         let transformedPath = withUnsafeMutablePointer(to: &transform) {
             path.mutableCopy(using: $0)
         }
@@ -105,7 +108,7 @@ private struct PitchLineBuilder {
         label.fontSize = style.font.size
         label.fontColor = style.textColor
         label.verticalAlignmentMode = .center
-        label.position.y = CGFloat(degree) * sceneSize.pointsPerDegree
+        label.position.y = CGFloat(degree) * sceneSize.pointsPerDegree * scaleY
         return label
     }
     
